@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link href="estilo.css" rel="stylesheet">
+    <link href="/../estilo.css" rel="stylesheet">
     <title>Juegos de Maria</title>
 </head>
 <body>
@@ -20,6 +20,11 @@
     </div>
     <br><br>
     <img src="/img/VirgenAlt.png" class=Imagen>
+    <form action="singup-inc.php" method="POST">
+       <input type="text" name="name" placeholder="Nombre Completo..."> 
+       <input type="password" name="pwd" placeholder="Contraseña...">
+       <button type="submit" name="submit">Siguiente</button>
+    </form>
     <br><br><br><br>
     <div class="Letra">
         <p>Bienvenidos</p>
