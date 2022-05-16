@@ -13,7 +13,7 @@
 				<img src="/img/VirgenAlt.png">
 			</div>
 		</div>
-		<form action="#modal">
+		<form>
 			<div class="right">
 				<div class="texto">
 					<h5>Ingreso</h5>
@@ -23,7 +23,7 @@
 						<input type="password" placeholder="Contraseña" name="contraseña">
 					</div>
 					<br><br>
-					<a href="#modal" class="modal-open"><button>Siguiente</button></a>
+					<button>Siguiente</button>
 				</div>
 				<div class="imagen">
 					<a href="https://pedrojustoberrio.edu.co/"target="_blank"><img src="/img/Logo_Colegio.png" width="230px"></a>
