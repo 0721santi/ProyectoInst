@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Poppins:wght@500&display=swap');
+/*----------------------Menu Desplegable Inicio--------------------------------*/
+body{
+    background-image: url(/img/FondoAlt.jpg);
+    overflow: hidden;
+    width: max-content;
+    height: max-content;
+}
+.barra{
+    font-family: "Holtwood One SC", serif;
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    transition: .5s all;
+    z-index: 1;
+    
+}
+.barra ul{
+    padding: 0px;
+    text-align: center;
+}
+.barra li{
+    transition: .3s all;
+}
+.barra a{
+    text-decoration: none;
+    list-style: none;
+    transition: .3s all;
+    font-size: 0px;
+    padding: 0px;
+}
+.barra h2{
+    
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    padding-bottom: 7px;
+    font-size: 0px;
+    text-shadow: rgb(0, 0, 0) 4px 8px 8px;
+}
+.barra img{
+   padding-top: 10px;
+   padding-left: 10px; 
+}
+.barra:hover{
+    border: 6px solid #001aff;
+    border-radius: 40px;
+    width: 20%;
+    height: 95%;
+    background: rgb(151, 224, 255);
+    background-size: 200px;
+    background-image: url(logopjb.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x:95px ;
+    background-position-y: 600px;
+}
+.barra:hover h2{
+    padding: 15px;
+    font-size: 30px;
+}
+.barra:hover a{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    display: block;
+    padding: 20px;
+    text-shadow: rgb(0, 0, 0) 4px 8px 8px;
+}
+.barra:hover img{
+    height: 0px;
+}
+.barra:hover li{
+    border-top: 3px solid rgb(255, 255, 255);
+    width: 100%;
+}
+.barra:hover ul:last-of-type{
+    border-bottom: 3px solid rgb(255, 255, 255);
+}
+.barra:hover a:hover{
+    font-size: 25px;
+    padding: 30px 0px;
+background-color: rgba(35, 22, 112, 0.98);
+}
+/*----------------------Menu Desplegable Final--------------------------------*/
+/*----------------------Imagen Maria Inicio--------------------------------*/
+.Imagen{
+    position: absolute;
+    display: block;
+    left: 50em;
+    top: 4em;
+    width: 20%;
+    filter: drop-shadow(6px 2px 2px rgb(0, 0, 0));
+  }
+  /*------------------------Imagen Maria Final-----------------------------*/
+  /*----------------------Letra con Efecto Inicio--------------------------------*/
+  .Letra{
+    font-family: "Holtwood One SC", serif;
+    display: flex;
+    width: 1020px;
+    height: 64px;
+    color:rgb(255, 255, 255);
+    font-size: 60px;
+    line-height: 60px; 
+    font-weight: bold;  
+    position: absolute;
+    top: 80%;
+    left: 25%;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+    text-shadow: rgb(0, 0, 0) 2px 4px 3px;
+}
+
+.Animacion  {
+    animation: roll 5s infinite;
+    list-style: none;
+    padding-left: 20px;
+    
+}
+
+ul{
+  list-style: none;
+  padding-left: 10px;
+ 
+}
+ul, p{
+    margin: 0;
+    
+
+}
+
+ @keyframes roll{
+    0%{margin-top: 0px;}
+    20%{margin-top: 0px;}
+
+    25%{margin-top:   -60px;}
+    50%{margin-top:   -60px;}
+
+    55%{margin-top:   -60px;}
+    80%{margin-top:   -60px;}
+
+    85%{margin-top:   0px;}
+    95%{margin-top:   0px;}
+
+    100%{margin-top: 0px;}
+}
+ /*----------------------Letra con Efecto Inicio--------------------------------*/
+/*---------------------------------Logo Colegio Inicio-----------------------------------*/
+
+.LogoInstitucional{
+    position: absolute;
+    margin-left: 1600px;
+    top: 30px;
+    width: 30%;
+    filter: drop-shadow(6px 2px 2px rgb(63, 63, 63));
+}
+
+/*---------------------------------Logo Colegio Final-----------------------------------*/
+/*---------------------------------Pagina 2----------------------------------------------*/
+.Insertar{
+    font-family: "Holtwood One SC", serif;
+    position: absolute;
+    left: 20%;
+    top: 10%; 
+    font-size: 30px;
+    letter-spacing: 10px;
+}
+.Caja{
+    background-color: rgb(151, 224, 255);;
+    border-radius: 500px;
+    width: 1100px;
+    height: 40px;
+    font-size: 40px;
+    text-align: center;
+    border-color: black;
+    border-width: 5px;
+    
+}
+.Boton1{
+    font-family: "Holtwood One SC", serif;
+    position: absolute;
+    left: 42%;
+    top: 70%;
+   
+    
+}
+.Boton2{
+    font-family: "Holtwood One SC", serif;
+    position: absolute;
+    left: 42%;
+    top: 90%;
+   
+    
+}
+.Boton1 input[type="submit"]{
+	width:100%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:#000;
+} 
+.Boton2 input[type="submit"]{
+	width:100%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:#000;
+} 
+/* LOGIN CSS */
+
