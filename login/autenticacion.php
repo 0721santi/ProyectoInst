@@ -13,23 +13,29 @@
 				<img src="/img/VirgenAlt.png">
 			</div>
 		</div>
-		<form>
-			<div class="right">
+		<div class="right">
+			<form action="base.php" method="GET">
 				<div class="texto">
 					<h5>Ingreso</h5>
 					<div class="inputs">
-						<input type="text" placeholder="Nombre" name="nombre">
+						<input type="text" name="name">
 						<br>
-						<input type="password" placeholder="Contraseña" name="contraseña">
+						<input type="password" placeholder="Contraseña" name="pwd">
 					</div>
 					<br><br>
-					<button>Siguiente</button>
+					<input type="submit" value="Siguiente" class="css-button-sharp--grey">
 				</div>
-				<div class="imagen">
-					<a href="https://pedrojustoberrio.edu.co/"target="_blank"><img src="/img/Logo_Colegio.png" width="230px"></a>
+			</form>
+			<div class=Error>
+					<?php 
+						$error = $_GET['error'];
+						if($error==1) {echo "DATOS ERRONEOS";}
+					?>
 				</div>
+			<div class="imagen">
+				<a href="https://pedrojustoberrio.edu.co/"target="_blank"><img src="/img/Logo_Colegio.png" width="230px"></a>
 			</div>
-		</form>
+		</div>
 	</div>
 </body>
 </html>
