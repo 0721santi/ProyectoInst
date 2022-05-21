@@ -48,12 +48,14 @@ a:visited{
   display: flex;
   justify-content: space-around;
   align-content: center;
-  column-gap: 10em;
+  column-gap: 15em;
 }
 .texto{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: stretch;
+  column-gap: 5%;
 }
 .imagen{
   margin-right: 4em;
@@ -106,4 +108,27 @@ a:visited{
   background: #fff;
   color: #495057;
   border: 3px solid #495057;
+}
+/* CLOSING MARK */
+.modal__close{
+  color: red;
+  font-size: 4em;
+  position: absolute;
+  top: 2em;
+  right: 5em;
+  z-index: 2;
+}
+/* ERROR MSG ON LOGIN */
+
+.error{
+  position: absolute;
+  top: 72%;
+  opacity: 100%;
+}
+.mal{
+  background-color: #f2dede;
+  color: #b94a48;
+  font-size: 3em;
+  padding: 10px;
+  border-radius: 10px;
 }
