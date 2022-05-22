@@ -280,4 +280,24 @@ filter: drop-shadow(6px 1px 1px rgb(0, 0, 0));
 .Tabla, td, tr{
     color: white;
 }
-/*---------------------------------Pagina Tabla----------------------------------------------*/
+/* BOTONES */
+.css-button-sharp--grey {
+    border-radius: 50px;
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border: 3px solid #495057;
+    background: #495057;
+  }
+  .css-button-sharp--grey:hover {
+    background: #fff;
+    color: #495057;
+    border: 3px solid #495057;
+  }

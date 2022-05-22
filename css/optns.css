@@ -1,0 +1,67 @@
+body {
+    background-image: url(/img/FondoAlt.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Open Sans", sans-serif;
+    color: #333333;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    overflow: hidden;
+}
+.LogoInstitucional{
+    position: absolute;
+    margin-left: 1900px;
+    top: 30px;
+    width: 30%;
+    filter: drop-shadow(6px 2px 2px rgb(63, 63, 63));
+}
+.Imagen{
+    margin-top: 12px;
+    width: 20%;
+    filter: drop-shadow(6px 2px 2px rgb(0, 0, 0));
+}
+.letra{
+    margin-top: 1%; 
+    font-size: 30px; 
+    color:rgb(255, 255, 255);
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 2em;
+}
+.letra:hover{
+    background: linear-gradient(to right, #333399 0%, #0099ff 82%);
+    border-radius: 2em;
+    padding: 10px;
+}
+/* BOTONES */
+.css-button-sharp--grey {
+    border-radius: 50px;
+    min-width: 130px;
+    height: 60px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border: 3px solid #495057;
+    background: #495057;
+}
+.css-button-sharp--grey:hover {
+    background: #fff;
+    color: #495057;
+    border: 3px solid #495057;
+}
+.opciones{
+    margin-top: 2.5em;
+    display: flex;
+    align-items: center;
+    column-gap: 2.5em;
+}
