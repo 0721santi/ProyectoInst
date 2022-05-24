@@ -2,10 +2,13 @@
 /*----------------------Menu Desplegable Inicio--------------------------------*/
 body{
     background-image: url(/img/FondoAlt.jpg);
-    overflow: hidden;
+    overflow-x: hidden;
     width: max-content;
     height: max-content;
 }
+/*.cuerpo{
+    
+}*/
 .barra{
     font-family: "Holtwood One SC", serif;
     width: 10%;
@@ -102,8 +105,8 @@ background-color: rgba(35, 22, 112, 0.98);
     font-size: 60px;
     line-height: 60px; 
     font-weight: bold;  
-    position: absolute;
-    top: 80%;
+    position: relative;
+    top: 11em;
     left: 25%;
     margin: 0;
     overflow: hidden;
@@ -296,8 +299,59 @@ filter: drop-shadow(6px 1px 1px rgb(0, 0, 0));
     border: 3px solid #495057;
     background: #495057;
   }
-  .css-button-sharp--grey:hover {
+.css-button-sharp--grey:hover {
     background: #fff;
     color: #495057;
     border: 3px solid #495057;
-  }
+}
+/*pie de página*/
+.footer{
+    position: relative;
+    top: 52em;
+    left: 0;
+    background-color: #002244;
+    height: 200px;
+    width: 1870px;
+    margin-left: -8px;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+}
+.inicial{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    text-align: center;
+    column-gap: 10em;
+    height: 200px;
+}
+.rs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    margin-left: 10px;
+}
+.iconos{
+    width: 400px;
+    display: flex;
+    column-gap: 5em;
+    flex-direction: row;
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px
+}
+.nombres{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    column-gap: 30px;
+}
+.copy{
+    font-size: 20px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
