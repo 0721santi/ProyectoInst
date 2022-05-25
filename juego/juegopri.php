@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,4 +13,18 @@
         $pass = $_GET['pass'];
    ?> 
 </body>
+=======
+<html>
+<?php
+    $counter = 0;
+?>
+<head>
+    <meta charset="UTF-8">
+    <title>Contador</title>
+</head>
+<body>
+    <button onclick=<?php $counter + 1 ?>><?php echo $counter ?></button>
+</body>
+
+>>>>>>> bb29b450be092873cd9a1dd8bda4fe06a3c252b4
 </html>
