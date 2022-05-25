@@ -1,0 +1,19 @@
+tr:hover {background-color: rgb(255, 234, 0);}
+tr:nth-child(even) {background-color: #56f4ff;}
+tr:nth-child(odd) {background-color: #ff82bf;}
+th {
+    background-color: aliceblue;
+    color:black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+   }
+
+   th, td {
+    text-align: left;
+    padding: 8px;
+   }
+
+   /*Intente poner el css acá en este archivo pero no supe como, si ustedes saben, bien puedan XD*/

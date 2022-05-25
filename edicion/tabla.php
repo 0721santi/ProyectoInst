@@ -7,11 +7,15 @@
     <link href="/css/estilo.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+    <?php 
+        $nom = $_GET['user'];
+        $pass = $_GET['pass'];
+    ?>
     <div class=barra>
         <h2>Menu Juegos</h2><img src="/img/Icono.png" width="50px">
         <ul>
-            <li><a href="/../index.html">Inicio</a></li>
-            <li><a href="/juego/juego.php">Juego</a></li>
+            <li><a href="/../index.html">INICIO</a></li>
+            <li><a href="/login/opciones.php?user=<?php echo $nom;?>&pass=<?php echo $pass;?>">OPCIONES</a></li>
         </ul>
     </div>
     <div class=Tabla>
@@ -24,21 +28,22 @@
                 </thead>
             </tr>
             <?php
-                $conexion = mysqli_connect("localhost","root","juan1");
-
+                $conexion = mysqli_connect("localhost",$nom,$pass,'preguntasmaria');
                 //if (!$conexion) { echo "Conexión fallida<br>"; } else { echo "Conectado exitosamente<br>"; }
 
                 $consulta = mysqli_query($conexion, "SELECT * FROM preguntasmaria.preguntas");
                 echo "<form active='reemplazo.php'>";
                 while ($fila = mysqli_fetch_assoc($consulta))
-                {echo "<tr><td><a href='confirmacion.php?iddaticos=".$fila["id"]."&preg=".$fila["pregunta"]."&resp=".$fila["dificultad"]."'>".$fila["id"]."</td><td><a href='cambios.php?iddaticos=".$fila["id"]."&preg=".$fila["pregunta"]."&resp=".$fila["dificultad"]."'>".$fila["pregunta"]."</a></td><td><a href='cambios.php?iddaticos=".$fila["id"]."&preg=".$fila["pregunta"]."&resp=".$fila["dificultad"]."'>".$fila["dificultad"]."</a></td></tr>";}
+                {echo "<tr>
+                    <td><a href='confirmacion.php?iddaticos=".$fila["id"]."&preg=".$fila["pregunta"]."&resp=".$fila["dificultad"]."&user=$nom&pass=$pass'>".$fila["id"]."</a></td>
+                    <td><a href='cambios.php?iddaticos=".$fila["id"]."&preg=".$fila["pregunta"]."&resp=".$fila["dificultad"]."&user=$nom&pass=$pass'>".$fila["pregunta"]."</a></td>
+                    <td><a href='cambios.php?iddaticos=".$fila["id"]."&preg=".$fila["pregunta"]."&resp=".$fila["dificultad"]."&user=$nom&pass=$pass'>".$fila["dificultad"]."</a></td>
+                    </tr>";
+                }
                 echo "</form>";
                 mysqli_close($conexion);
             ?>
         </table>
-    </div>
-    <div class=Volver>
-        <a href="/edicion/ndato.php" ><input type="submit" value="VOLVER A PÁGINA DE INGRESO DE DATOS"></a>
     </div>
 </body>
 </html>
