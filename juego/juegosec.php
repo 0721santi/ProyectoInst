@@ -1,105 +1,58 @@
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Table Test</title>
-        <style>
-            /* css que especifica los colores de la tabla */
+<!DOCTYPE html>
+<html lang="es">  
+<?php
+    $nom = $_GET['user'];
+    $pass = $_GET['pass'];
+?>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/img/logopjb.png">
+    <link rel="stylesheet" href="/css/juego.css">
+    <title>JUEGO</title>
+    <style>
+        body{
+            background-image: url(/img/FondoAlt.jpg);
+            font-family: "Holtwood One SC", serif;
+            height: auto;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>JUEGO</h1>
+    <div class="cuerpo">
+        <div class="id">
+            <?php
+                $conexion = mysqli_connect("localhost",$nom,$pass,"preguntasmaria");
 
-            tr:nth-child(even) {background-color: #56f4ff;}
-            tr:nth-child(odd) {background-color: #ff82bf;}
+                //if (!$conexion) { echo "Conexión fallida<br>"; } else { echo "Conectado exitosamente<br>"; }
 
-            th {
-             background-color: aliceblue;
-             color:black;
-            }
-            /* Cosas de formato */
-            th, td {
-             text-align: left;
-             padding: 8px;
-            }
+                $consulta = mysqli_query($conexion, "SELECT id FROM preguntasmaria.preguntas");
 
-        </style>
-    </head>
-    <body>
-        <center>
-        <h2>Prueba de tabla</h2>
-        <table>
-        <tr>
-            <th colspan="10"><center>Bienvenidos al juego</center></th>
-            <!--Esto de acá especifica que tanto el header de la tabla va a abarcar, en este caso va a
-            abarcar todas las 10 columnas como si fuera un titulo centrado, pero si quieren cambiar
-            el número de columnas solo tienen que cambiar el numero del colspan-->
-        </tr>
-        <tr>
-            <td><strong>1</strong></td>
-            <td><strong>2</strong></td>
-            <td><strong>3</strong></td>
-            <td><strong>4</strong></td>
-            <td><strong>5</strong></td>
-            <td><strong>6</strong></td>
-            <td><strong>7</strong></td>
-            <td><strong>8</strong></td>
-            <td><strong>9</strong></td>
-            <td><strong>10</strong></td>
-        </tr>
-        <tr>
-            <td><strong>11</strong></td>
-            <td><strong>12</strong></td>
-            <td><strong>13</strong></td>
-            <td><strong>14</strong></td>
-            <td><strong>15</strong></td>
-            <td><strong>16</strong></td>
-            <td><strong>17</strong></td>
-            <td><strong>18</strong></td>
-            <td><strong>19</strong></td>
-            <td><strong>20</strong></td>
-        </tr>
-        <tr>
-            <td><strong>21</strong></td>
-            <td><strong>22</strong></td>
-            <td><strong>23</strong></td>
-            <td><strong>24</strong></td>
-            <td><strong>25</strong></td>
-            <td><strong>26</strong></td>
-            <td><strong>27</strong></td>
-            <td><strong>28</strong></td>
-            <td><strong>29</strong></td>
-            <td><strong>30</strong></td>
-        </tr>
-        <tr>
-            <td><strong>31</strong></td>
-            <td><strong>32</strong></td>
-            <td><strong>33</strong></td>
-            <td><strong>34</strong></td>
-            <td><strong>35</strong></td>
-            <td><strong>36</strong></td>
-            <td><strong>37</strong></td>
-            <td><strong>38</strong></td>
-            <td><strong>39</strong></td>
-            <td><strong>40</strong></td>
-        </tr>
-        <tr>
-            <td><strong>41</strong></td>
-            <td><strong>42</strong></td>
-            <td><strong>43</strong></td>
-            <td><strong>44</strong></td>
-            <td><strong>45</strong></td>
-            <td><strong>46</strong></td>
-            <td><strong>47</strong></td>
-            <td><strong>48</strong></td>
-            <td><strong>49</strong></td>
-            <td><strong>50</strong></td>
-        </tr>
-        <tr>
-            <td colspan="2"><strong>51</strong></td>
-            <td colspan="2"><strong>52</strong></td>
-            <td colspan="2"><strong>53</strong></td>
-            <td colspan="2"><strong>54</strong></td>
-            <td colspan="2"><strong>55</strong></td>
-            <!--Misma vuelta que antes del colspan, pero para que no hayan espacios
-            en blanco al final de la tabla-->
-        </tr>
-        </table>
-        </center>
-    </body>
+                while ($fila = mysqli_fetch_assoc($consulta))
+                {echo "<a href='pregunta.php?id=".$fila['id']."&user=$nom&pass=$pass' class='numero' target='frame1'>".$fila["id"]."</a>";}
+                mysqli_close($conexion);
+            ?>
+        </div>
+        <div class="derecha">
+            <div class="frame">
+                <iframe name="frame1"></iframe>
+            </div>
+            <div class="contadores">
+                <div class="contador-izq">
+                    <iframe src="/contadores/c1.htm" style="height: 200px; width:390px;"></iframe>
+                    <iframe src="/contadores/c2.htm" style="height: 200px; width:390px;"></iframe>
+                    <iframe src="/contadores/c3.htm" style="height: 200px; width:390px;"></iframe>
+                </div>
+                <div class="contador-der">
+                    <iframe src="/contadores/c4.htm" style="height: 200px; width:390px;"></iframe>
+                    <iframe src="/contadores/c5.htm" style="height: 200px; width:390px;"></iframe>
+                    <iframe src="/contadores/c6.htm" style="height: 200px; width:390px;"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>

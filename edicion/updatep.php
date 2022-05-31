@@ -5,7 +5,7 @@
     $pass = $_GET['pass'];
     $conectar = mysqli_connect('localhost',$nom,$pass,'preguntasmaria');
     //if (!$conectar) { echo "Conección fallida<br>"; } else { echo "Conectado exitosamente<br>"; }
-    $result = mysqli_query($conectar, "UPDATE preguntasmaria.preguntas SET preguntas='".$cam."' WHERE iddaticos='".$ida."'");
+    $result = mysqli_query($conectar, "UPDATE preguntasmaria.preguntas SET preguntas='".$cam."' WHERE id='".$ida."'");
     mysqli_close($conectar);
 ?>
 <meta http-equiv="refresh" content="0; url=tabla.php?user=$nom&pass=$pass">

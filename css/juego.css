@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Poppins:wght@500&display=swap');
+.cuerpo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+a:link,
+a:visited{
+    text-decoration: none;
+}
+a:visited:hover{
+    background-color: black;
+}
+a:hover{
+    background-color: #4576a7;
+}
+
+.id{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 300px;
+    height: 150px;
+    gap: 5px;
+    margin-bottom: 19em;
+    margin-left: 5px;
+}
+.numero{
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    background-color: #0f2aff;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 20px;
+    color: white;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+}
+.derecha{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+iframe{
+    height: 25em;
+    width: 40em;
+    border: 0;
+}
+.frame{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 250px;
+    margin-top: -50px;
+}
+.texto{
+    font-size: 44px;
+    text-align: center;
+    column-gap: 20px;
+    font-weight: bold;
+}
+/* contador */
+.contadores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+}
+.contador-izq, .contador-der{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+}
+.contador{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'poppins', Arial, Helvetica, sans-serif;
+}
+.wrapper{
+    height: 120px;
+    min-width: 380px;
+    background-color: white;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.wrapper span{
+    width: 100%;
+    text-align: center;
+    font-size: 55px;
+    font-weight: 600;
+}
+.wrapper span.num{
+    font-size: 50px;
+    border-right: 2px solid rgba(0,0,0,0.2);
+    border-left: 2px solid rgba(0,0,0,0.2);
+    pointer-events: none;
+}
+/*-----*/
+.LogoInstitucional{
+    margin-left: 13em;
+    width: 30%;
+    filter: drop-shadow(6px 2px 2px rgb(63, 63, 63));
+}
