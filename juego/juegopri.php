@@ -32,7 +32,7 @@
                 $consulta = mysqli_query($conexion, "SELECT id FROM preguntasmaria.primaria");
 
                 while ($fila = mysqli_fetch_assoc($consulta))
-                {echo "<a href='pregunta.php?id=".$fila['id']."&user=$nom&pass=$pass' class='numero' target='frame1'>".$fila["id"]."</a>";}
+                {echo "<a href='preguntapri.php?id=".$fila['id']."&user=$nom&pass=$pass' class='numero' target='frame1'>".$fila["id"]."</a>";}
                 mysqli_close($conexion);
             ?>
         </div>
