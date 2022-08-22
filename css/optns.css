@@ -1,5 +1,5 @@
 body {
-    background-image: url(/img/FondoAlt.jpg);
+    /*background-image: url(/img/FondoAlt.jpg);*/
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -25,7 +25,13 @@ body {
     width: 20%;
     filter: drop-shadow(6px 2px 2px rgb(0, 0, 0));
 }
-.letra{
+.ImagenPJB{
+    margin-left: 25px;
+    margin-top: 12px;
+    width: 35%;
+    filter: drop-shadow(6px 2px 2px rgb(0, 0, 0));
+}
+.letra, .letra1{
     margin-top: 1%; 
     font-size: 30px; 
     color:rgb(255, 255, 255);
@@ -33,7 +39,14 @@ body {
     padding: 10px;
     border-radius: 2em;
 }
+/*HOVER PPAL*/
 .letra:hover{
+    background: linear-gradient(to right, #8B0000 0%, #FF0000 82%);
+    border-radius: 2em;
+    padding: 10px;
+}
+/*HOVER MARIA*/
+.letra1:hover{
     background: linear-gradient(to right, #333399 0%, #0099ff 82%);
     border-radius: 2em;
     padding: 10px;
@@ -60,6 +73,7 @@ body {
     border: 3px solid #495057;
 }
 .opciones{
+    margin-left: 20px;
     margin-top: 2.5em;
     display: flex;
     align-items: center;

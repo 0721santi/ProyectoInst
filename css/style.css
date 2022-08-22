@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Poppins:wght@500&display=swap');
+/*----------------------Menu Desplegable Inicio--------------------------------*/
+body{
+    /*background-image: url(/img/FondoAlt.jpg);*/
+    background-color: #B22222;
+    overflow-x: hidden;
+    width: max-content;
+    height: max-content;
+}
+/*.cuerpo{
+    
+}*/
+/*BARRA SELECCION INICIAL*/
+.barra{
+    font-family: "Holtwood One SC", serif;
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    transition: .5s all;
+    z-index: 1;
+    
+}
+.barra ul{
+    padding: 0px;
+    text-align: center;
+}
+.barra li{
+    transition: .3s all;
+}
+.barra a{
+    text-decoration: none;
+    list-style: none;
+    transition: .3s all;
+    font-size: 0px;
+    padding: 0px;
+}
+.barra h2{
+    
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    padding-bottom: 7px;
+    font-size: 0px;
+    text-shadow: rgb(0, 0, 0) 4px 8px 8px;
+}
+.barra img{
+   padding-top: 10px;
+   padding-left: 10px; 
+}
+.barra:hover{
+    border: 6px solid #FA8072;
+    border-radius: 40px;
+    width: 20%;
+    height: 95%;
+    background: #8B0000;
+    background-size: 200px;
+    background-image: url(logopjb.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x:95px ;
+    background-position-y: 600px;
+}
+.barra:hover h2{
+    padding: 15px;
+    font-size: 30px;
+}
+.barra:hover a{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    display: block;
+    padding: 20px;
+    text-shadow: rgb(0, 0, 0) 4px 8px 8px;
+}
+.barra:hover img{
+    height: 0px;
+}
+.barra:hover li{
+    border-top: 3px solid rgb(255, 255, 255);
+    width: 100%;
+}
+.barra:hover ul:last-of-type{
+    border-bottom: 3px solid rgb(255, 255, 255);
+}
+.barra:hover a:hover{
+    font-size: 25px;
+    padding: 30px 0px;
+    background-color: rgba(35, 22, 112, 0.98);
+}
+/*----------------------Menu Desplegable Final--------------------------------*/
+/*----------------------Imagen Maria Inicio--------------------------------*/
+.titulo-ini{
+    font-family: "Holtwood One SC", serif;
+    position: absolute;
+    display: block;
+    left: 9.7em;
+    top: 0.2em;
+    width: 1020px;
+    height: 64px;
+    color:rgb(255, 255, 255);
+    text-shadow: rgb(0, 0, 0) 2px 4px 3px;
+    font-size: 60px;
+}
+
+.Imagen{
+    position: absolute;
+    display: block;
+    left: 40em;
+    top: 10em;
+    width: 33%;
+    filter: drop-shadow(6px 2px 2px rgb(0, 0, 0));
+  }
+  /*------------------------Imagen Maria Final-----------------------------*/
+  /*----------------------Letra con Efecto Inicio--------------------------------*/
+  .Letra{
+    font-family: "Holtwood One SC", serif;
+    display: flex;
+    width: 1020px;
+    height: 64px;
+    color:rgb(255, 255, 255);
+    font-size: 60px;
+    line-height: 60px; 
+    font-weight: bold;  
+    position: relative;
+    top: 11.5em;
+    left: 24%;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+    text-shadow: rgb(0, 0, 0) 2px 4px 3px;
+}
+
+.Animacion  {
+    animation: roll 5s infinite;
+    list-style: none;
+    padding-left: 20px;
+    
+}
+
+ul{
+  list-style: none;
+  padding-left: 10px;
+ 
+}
+ul, p{
+    margin: 0;
+    
+
+}
+
+ @keyframes roll{
+    0%{margin-top: 0px;}
+    20%{margin-top: 0px;}
+
+    25%{margin-top:   -60px;}
+    50%{margin-top:   -60px;}
+
+    55%{margin-top:   -60px;}
+    80%{margin-top:   -60px;}
+
+    85%{margin-top:   0px;}
+    95%{margin-top:   0px;}
+
+    100%{margin-top: 0px;}
+}
+ /*----------------------Letra con Efecto Inicio--------------------------------*/
+/*---------------------------------Logo Colegio Inicio-----------------------------------*/
+
+.LogoInstitucional{
+    position: absolute;
+    margin-left: 1600px;
+    top: 30px;
+    width: 30%;
+    filter: drop-shadow(6px 2px 2px rgb(63, 63, 63));
+}
+
+/*---------------------------------Logo Colegio Final-----------------------------------*/
+/*---------------------------------Pagina Ndato----------------------------------------------*/
+.Insertar{
+    font-family: "Holtwood One SC", serif;
+    position: absolute;
+    left: 20%;
+    top: 10%; 
+    font-size:30px;
+    letter-spacing: 10px;
+    filter: drop-shadow(6px 1px 1px rgb(0, 0, 0));
+    color: white;
+}
+.Caja{
+    background-color: rgb(151, 224, 255);
+    border-radius: 450px;
+    width: 1100px;
+    height: 40px;
+    font-size: 50px;
+    text-align: center;
+    border-color: black;
+    border-width: 5px;
+    
+}
+.Boton1{
+    font-family: "Holtwood One SC", serif;
+    position: absolute;
+    left: 42%;
+    top: 70%;
+    filter: drop-shadow(6px 2px 2px rgb(0, 0, 0));
+   
+    
+}
+.Boton2{
+    font-family: "Holtwood One SC", serif;
+    position: absolute;
+    left: 33%;
+    top: 80%;
+    filter: drop-shadow(6px 2px 2px rgb(0, 0, 0));
+   
+    
+}
+.Boton1 input[type="submit"]{
+    font-weight: bold;
+    font-size: 30px;
+	width:180px;
+    height: 50px;
+    border-radius: 450px;
+	padding:8px 14px;
+	margin-top:32px;
+	border:3px solid #525252;
+	border-radius:5px;
+	display:block;
+	color:rgb(255, 255, 255);
+	background-color:rgb(151, 224, 255);
+    
+} 
+.Boton2 input[type="submit"]{
+    font-weight: bold;
+    font-size: 30px;
+
+	width:520px;
+    height: 50px;
+	padding:8px 14px;
+	margin-top:28px;
+    border-radius: 450px;
+	border:3px solid #525252;
+	border-radius:5px;
+	display:block;
+	color:rgb(255, 255, 255);
+	background-color:#97e0ff;
+    
+} 
+
+a:link,
+a:visited{
+    text-decoration: none;
+    color: #0000ee;
+}
+/*---------------------------------Pagina Ndato----------------------------------------------*/
+/*---------------------------------Pagina Autenticación----------------------------------------------*/
+.Error{
+    font-weight: bold;
+}
+/*---------------------------------Pagina Autenticación----------------------------------------------*/
+/*---------------------------------Pagina Autenticación----------------------------------------------*/
+/*---------------------------------Pagina Tabla----------------------------------------------*/
+.Tabla{
+    font-family: "Holtwood One SC", serif;
+    position: absolute;  
+    left: 17%;
+    top: 5%;
+}
+Tabla table{
+    color: green;
+}
+.Tabla th{
+color: #ffffff;
+font-size: 40PX;
+filter: drop-shadow(6px 1px 1px rgb(0, 0, 0));
+}
+
+.Volver{
+    font-family: "Holtwood One SC", serif;
+    position: absolute;
+    left: 32%;
+    top: 80%;
+}
+
+.Volver input[type="submit"]{
+    font-weight: bold;
+    font-size: 30px;
+
+	width:720px;
+    height: 50px;
+	padding:8px 14px;
+	margin-top:28px;
+    border-radius: 450px;
+	border:3px solid #525252;
+	border-radius:5px;
+	display:block;
+	color:rgb(255, 255, 255);
+	background-color:#97e0ff;
+} 
+.Tabla, td, tr{
+    color: white;
+}
+/* BOTONES */
+.css-button-sharp--grey {
+    border-radius: 50px;
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border: 3px solid #495057;
+    background: #495057;
+  }
+.css-button-sharp--grey:hover {
+    background: #fff;
+    color: #495057;
+    border: 3px solid #495057;
+}
+/*pie de página*/
+.footer{
+    position: relative;
+    top: 52em;
+    left: 0;
+    background-color: #002244;
+    height: 200px;
+    width: 1870px;
+    margin-left: -8px;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+}
+.inicial{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    text-align: center;
+    column-gap: 10em;
+    height: 200px;
+}
+.rs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    margin-left: 10px;
+}
+.iconos{
+    width: 400px;
+    display: flex;
+    column-gap: 5em;
+    flex-direction: row;
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px
+}
+.nombres{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    column-gap: 30px;
+}
+.copy{
+    font-size: 20px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+/* confirmación.php */
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 88vh;
+    width: 100vw;
+}
+.titulo{
+    font-size: 30px;
+}
+.datos{
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+}
+.botones{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 1rem;
+}
